@@ -32,7 +32,7 @@ const ReceiptPage: React.FC<CustomerProps> = ({ items, totalAmount, addressInfo,
 
     const handleSubmit = async () => {
         if (addressInfo !== null) {
-            const response = await fetch('https://eowyyh7aavsptru.m.pipedream.net', {
+            const response = await fetch('http://localhost:5000//checkout_data/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
